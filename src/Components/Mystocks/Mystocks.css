@@ -19,7 +19,7 @@ td,th{
  overflow-x:auto;
 }
 .heading_row{
-    background-color: blue;
+    background-color: rgb(27, 205, 218);
     text-align: center;
     color: white;
 }
@@ -29,11 +29,11 @@ tr:nth-of-type(even){
 
   .StopTrackingBtn{
       margin-left: 50px;
-      background-color: red;
+      background-color: rgb(255, 136, 0);
       color: white;
-      border-radius: 7px;
-      height: 30px;
-      width: 150px;
+      border-radius: 10px;
+      height: 35px;
+      width: 200px;
       cursor: pointer;
       
   }
@@ -48,7 +48,7 @@ tr:nth-of-type(even){
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
          h1{
-            font-size: 32px;
+            font-size: 34px;
             margin-left: 2rem;
         }
    }

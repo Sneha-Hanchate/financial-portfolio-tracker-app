@@ -22,16 +22,16 @@ h2{
     .StockButton
     {
         height: 2.5rem;
-        width:6rem;
-        border-radius: 5px;
-        background-color: white;
+        width:8rem;
+        border-radius: 6px;
+        background-color: rgb(231, 184, 184);
         font-size: 20px;
         cursor: pointer;
         
         }
         .StockButton:hover{
-            background-color: rgb(47, 43, 43);
-            color: aliceblue;
+            background-color: orange;
+            color: black;
             
 
         }

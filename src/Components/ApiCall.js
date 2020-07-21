@@ -12,12 +12,14 @@ class ApiCall extends Component {
      }
      
      componentDidMount(){
-        const{symbol,buyprice,share}=this.props; //Destructuring
-        let sym = symbol;
+        //const{symbol,buyprice,share}=this.props; //Destructuring
+        const{buyprice,share}=this.props; //Destructuring
+        //let sym = symbol;
         let buy =buyprice;
         let sh = share;
-        const apikey="NQ78YNGSKR7Y4ZI1";
-        const api_url=`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${sym}&apikey=${apikey}`;
+        // const apikey="TN7FTGXLR3WJAP4R";
+        // const api_url='https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${sym}&apikey=${apikey}';
+        const api_url='https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${sym}&apikey=TN7FTGXLR3WJAP4R';
             axios.get(api_url)
             .then((response)=>{
                 let lastRefreshed=response.data['Meta Data']["3. Last Refreshed"];
@@ -33,7 +35,7 @@ class ApiCall extends Component {
                  
             })
             .catch((error)=>{
-                console.log(error.response);
+                //console.log(error.response);
                 alert('Only 5 API calls can be made per minute,Please reload after sometime for Live Prices');
                 
             })
@@ -49,3 +51,4 @@ class ApiCall extends Component {
 }
 
 export default ApiCall;
+//"35VEPZDURMM5DLHT";

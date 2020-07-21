@@ -14,7 +14,7 @@
 
 }
 .page{
-    background-color: pink;
+    background-color: rgb(226, 152, 165);
 }
 .AddStockForm{
     border: 1px solid black;
@@ -52,14 +52,14 @@ font-size: 1rem;
     width: 50px;
     position: absolute;
     bottom: 100;
-    background-color: gray;
+    background-color: rgb(122, 108, 108);
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
 
 }
 .AddButton:hover{
-    background-color: lightgray;
+    background-color: rgb(55, 243, 18);
     color: black;
 }
 
