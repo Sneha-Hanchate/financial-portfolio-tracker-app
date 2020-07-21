@@ -36,7 +36,7 @@ class ApiCall extends Component {
             })
             .catch((error)=>{
                 //console.log(error.response);
-                alert('Only 5 API calls can be made per minute,Please reload after sometime for Live Prices');
+                // alert('Only 5 API calls can be made per minute,Please reload after sometime for Live Prices');
                 
             })
     }
